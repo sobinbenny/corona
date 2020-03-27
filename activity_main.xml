@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/aboutlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="About Us"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/contentpara1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutlabel"
+        android:layout_marginTop="3dp"
+        android:text="We are a group of passionate contributors."
+        android:textSize="15sp"
+        android:layout_margin="7dp"
+        android:padding="3dp"
+
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/contentpara2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentpara1"
+        android:text="Our Mission is to help the Government fight COVID-19 by building awareness among people about nearby Quarantine cases, proactively alert people to reduce further transmission, and build a community that can help fight this battle."
+        android:textSize="14sp"
+        android:layout_margin="7dp"
+        android:padding="3dp"
+
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/idealabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentpara2"
+        android:layout_marginTop="2dp"
+        android:text="Thought Leaders"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:id="@+id/mainlinear"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/idealabel"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginHorizontal="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/anujImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/anuj"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/bg2_end"
+
+                />
+            <TextView
+                android:id="@+id/anujname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anujImage"
+                android:text="Anuj Duggal"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:id="@+id/anujPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anujname"
+                android:text="Bangalore,India"
+                android:layout_centerHorizontal="true"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginLeft="15dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/prasImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pras"
+                app:civ_border_color="@color/bg2_end"
+                app:civ_border_width="2dp"
+
+                />
+
+            <TextView
+                android:id="@+id/prasname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anujImage"
+                android:text="Prasanth Reddy"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:id="@+id/prasPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anujname"
+                android:text="Hyderabad,India"
+                android:layout_centerHorizontal="true"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sobImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/sob"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/bg2_end"
+
+                />
+            <TextView
+                android:id="@+id/sobname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anujImage"
+                android:text="Sobin Benny"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:id="@+id/sobPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/anujname"
+                android:text="Kerala,India"
+                android:layout_centerHorizontal="true"
+                android:textSize="11sp"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/powerlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Powerhouse"
+        android:layout_below="@id/mainlinear"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+    <LinearLayout
+        android:id="@+id/linearsub1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_below="@id/powerlabel"
+        android:layout_marginHorizontal="3dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/boseImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/powerlabel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/akhil"
+                app:civ_border_color="@color/boyscol"
+                app:civ_border_width="2dp"
+
+                />
+
+            <TextView
+                android:id="@+id/bosename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boseImage"
+                android:layout_centerHorizontal="true"
+                android:text="Akhil Bose"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/rikImage"
+                android:layout_below="@id/powerlabel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/abhi"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/boyscol"
+
+                />
+            <TextView
+                android:id="@+id/rikname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boseImage"
+                android:text="Abhijith V S"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/divImage"
+                android:layout_below="@id/powerlabel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/divin"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/boyscol"
+
+                />
+            <TextView
+                android:id="@+id/divname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Divin Raj"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dhanImage"
+                android:layout_below="@id/powerlabel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/dhanush"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/boyscol"
+
+                />
+            <TextView
+                android:id="@+id/dhanname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boseImage"
+                android:text="Dhanush Saji"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearsub2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_below="@id/linearsub1"
+        android:layout_marginHorizontal="3dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/aflImage"
+                android:layout_below="@id/powerlabel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/aflah"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/boyscol"
+
+                />
+            <TextView
+                android:id="@+id/afname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boseImage"
+                android:text="Aflah V P"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/shivImage"
+                android:layout_below="@id/powerlabel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/shiv"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/boyscol"
+
+                />
+            <TextView
+                android:id="@+id/shivname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boseImage"
+                android:text="Shivam Kumar Tiwari"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/vishImage"
+                android:layout_below="@id/powerlabel"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/visha"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/boyscol"
+
+                />
+            <TextView
+                android:id="@+id/vishalname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/boseImage"
+                android:text="Vishal Mehra"
+                android:layout_centerHorizontal="true"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearsub2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Made with  "/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/heart"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  in India "/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
